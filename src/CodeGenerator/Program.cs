@@ -69,10 +69,10 @@ namespace CodeGenerator
 
             string dllName = libraryName switch
             {
-                "cimgui" => "cimgui",
-                "cimplot" => "cimplot",
-                "cimnodes" => "cimnodes",
-                "cimguizmo" => "cimguizmo",
+                "cimgui" => "__Internal",
+                "cimplot" => "__Internal",
+                "cimnodes" => "__Internal",
+                "cimguizmo" => "__Internal",
                 _ => throw new NotImplementedException()
             };
             
